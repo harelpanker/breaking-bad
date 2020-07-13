@@ -19,7 +19,7 @@ function App() {
       );
       setItems(resault.data);
       setIsloading(false);
-      console.log(resault.data);
+      // console.log(resault.data);
     };
     fetchData();
   }, [query]);
