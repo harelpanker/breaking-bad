@@ -17,14 +17,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
 }
 a {
   text-decoration: none;
 }
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 100vw;
   position: relative;
   min-height: 100vh;
 }
@@ -51,7 +50,9 @@ header img {
   justify-content: center;
 }
 .main {
-  padding-bottom: 80px;
+  padding-bottom: 180px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .search {
   height: 100px;
@@ -129,10 +130,10 @@ input[type="text"]:focus {
 }
 .footer {
   height: 80px;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   background-color: transparent;
   border-top: 1px solid rgba(248, 248, 255, 0.8);
-  margin-top: 60px;
   display: flex;
   align-items: center;
   position: absolute;
@@ -163,6 +164,9 @@ input[type="text"]:focus {
 @media (max-width: 1000px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .main {
+    padding: 0 15px 100px 15px;
   }
 }
 
